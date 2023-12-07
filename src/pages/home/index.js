@@ -18,7 +18,7 @@ export const Home = () => {
         <div
   className="h_bg-image order-1 order-lg-2 h-100"
   style={{
-    backgroundImage: `url('/assets/me.jpg')`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/me.jpg)`,
     filter: 'brightness(70%)',
     backgroundSize: 'cover', 
   }}

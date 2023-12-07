@@ -1,12 +1,11 @@
-{
+{ "homepage": "http//Jouinos93.github.io/Mariem-portfolio",
     "name": "react-portfolio",
     "version": "0.1.0",
     "private": true,
-    
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "latest"
+        "@babel/plugin-proposal-private-property-in-object": "latest",
+        "gh-pages": "^6.1.0"
     },
-
     "dependencies": {
         "bootstrap": "^5.2.3",
         "emailjs-com": "^3.2.0",
@@ -25,11 +24,12 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "predeploy": "yarn build && cp build/index.html build/404.html",
-        "deploy": "gh-pages -d build"
+        "eject": "react-scripts eject"
+       
     },
     "eslintConfig": {
         "extends": [
